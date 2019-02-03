@@ -4,7 +4,7 @@ download.file(url="https://ndownloader.figshare.com/files/2292169",
 # Read Portal
 surveys <- read.csv("data/portal_data_joined.csv")
 
-#Subset data in surveys_subset\
+#Subset data into surveys_subset
 
 surveys_subset <- surveys[1:400, c (1,5:8)]
 
@@ -15,13 +15,13 @@ subset(surveys_subset,hindfoot_length>32)
 surveys_long_feet <- subset(surveys_subset,hindfoot_length>32)
 
 # Create a Histogram
-hist(surveys_long_feet[,5])
+hist(surveys_long_feet$hindfoot_length)
 
 # Change hind_footlenghts to character vectors
 
-as.character(surveys_long_feet[,5])
+as.character(surveys_long_feet$hindfoot_length)
 
 # Create histogram of the characters
 
-hist(as.character(surveys_long_feet[,5]))
+hist(as.character(surveys_long_feet$hindfoot_length ))
 # Error ins his --> must be numeric. Histograms calculate a distribution from numeric values and we just turned ours into character values
