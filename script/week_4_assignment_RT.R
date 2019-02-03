@@ -24,4 +24,4 @@ as.character(surveys_long_feet$hindfoot_length)
 # Create histogram of the characters
 
 hist(as.character(surveys_long_feet$hindfoot_length ))
-# Error ins his --> must be numeric. Histograms calculate a distribution from numeric values and we just turned ours into character values
+# Error in histogram --> must be numeric. Histograms calculate a distribution from numeric values and we just turned ours into character values
