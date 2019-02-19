@@ -38,4 +38,4 @@ ggplot(gapminder, aes(x = gdpPercap, y = lifeExp, size=pop)) +
   scale_x_log10() +
   geom_smooth(method = 'lm', color = 'black', linetype = 'dashed') +
   theme_bw()
-# I had issues getting R to recognize pop. It kept wanting to call it populations even though the gapminder dataframe labels populations as pop. Size was moved up to the first line to make it as a global change. In this case size becomes a global esthetic rather than a geom.
+# I had issues getting R to recognize pop. It kept wanting to call it populations even though the gapminder dataframe labels populations as pop. Size was moved up to the first line to make it as a global change. In this case size becomes a global esthetic rather than a geom. # the geom_plot does not contain size data 
